@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Landing page of home server">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Home</title>
+</head>
+<body>
+	<div id="overlay"></div>
+	<div id="app">
+		<div class="landing">
+			<h1 class="landing__welcome">Welcome <span>Maarek</span></h1>
+			<div class="landing__clock">
+				<p class="landing__clock--desc">Time is:</p>
+				<p class="landing__clock--time">{{ this.time }}</p>
+			</div>
+			<form action="https://www.google.com/search?" method="GET" class="landing__search">
+				<div>
+					<input type="text" name="q" class="landing__search--input" placeholder="Search...">
+					<button class=""><i class="fa fa-search"></i></button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
